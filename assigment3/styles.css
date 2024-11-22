@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'ITC';
+    src: url('fonts/ITC Machine Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Euro';
+    src: url('fonts/EurostileExtendedBlack.ttf') format('truetype');
+}
+
+body, html {
+    margin: 0;   /*reset*/
+    padding: 0;
+    height: 100%;
+}
+
+.poster {
+    position: relative; /* best way I found to full screen the backgtround image*/
+    width: 100%;
+    height: 100%;
+    background: url('FFTD1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.text-wrapper {
+    position: absolute; /* all the text must be at bottem right of the scren like the og */
+    top: 84%;
+    right: 4%;
+    transform: translateY(-50%);
+    text-align: right;
+    text-transform: uppercase; /*all caps text in tha font*/
+    color: black;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;/*removes space */
+    font-weight: normal; /* Consistent font weight */
+}
+
+/* Euro font for h1h2h3 */
+h1, h2, h3 {
+    font-family: 'Euro', sans-serif;
+}
+
+h1, h3 {
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-size: 35px;
+    letter-spacing: 6px;
+}
+
+
+h4, h5 {
+    font-family: 'ITC', sans-serif; /* Use the ITC font for TOKYO and DRIFT */
+}
+
+h4 {
+    font-size: 50px;
+    letter-spacing: 10px;
+    margin-bottom: 5px; /* TOKYO */
+}
+
+h5 {
+    font-size: 48px;
+    letter-spacing: 8px; /*DRIFT */
+}
+/* Button pos */
+.bottom-left-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: orange; /* turns orange when ontop of it to match tha car */
+}
+
+
+
